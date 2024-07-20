@@ -87,7 +87,8 @@ If you have any questions or feedback, feel free to reach out:
 
 - **Name**: AReactDeveloper
 - **GitHub**: [AReactDeveloper](https://github.com/AReactDeveloper)
-- **Email**: areactdeveloper@example.com
+- **Email**: elahracheabdelhak@gmail.com
+- **Email**: @brutal.workout
 
 Thank you for checking out this project! If you found it helpful or interesting, please consider giving it a star on GitHub 🌟.
 
