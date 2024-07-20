@@ -329,7 +329,7 @@ body {
 }
 .wrapper__cards-container__card {
   height: 160px;
-  border-radius: 20px;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   justify-content: end;
