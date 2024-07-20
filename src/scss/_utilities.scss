@@ -1,0 +1,72 @@
+.bg-work{
+    background-color: var(--clr-light-red-work) !important;
+    position: relative;
+    &::after{
+        content: url('./../../images/icon-work.svg');
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+.bg-play{
+    background-color: var(--clr-soft-blue-play) !important;
+    position: relative;
+    &::after{
+        content: url('./../../images/icon-play.svg');
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+.bg-study{
+    background-color: var(--clr-light-red-study) !important;
+    position: relative;
+    &::after{
+        content: url('./../../images/icon-study.svg');
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+.bg-exercise{
+    background-color: var(--clr-lime-green-exercise) !important;
+    position: relative;
+    &::after{
+        content: url('./../../images/icon-exercise.svg');
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+.bg-social{
+    background-color: var(--clr-violet-social) !important;
+    position: relative;
+    &::after{
+        content: url('./../../images/icon-social.svg');
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+
+.bg-self-care{
+    background-color: var(--clr-soft-orange-selfCare) !important;
+    position: relative;
+    &::after{
+        content: url('./../../images/icon-self-care.svg');
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+}

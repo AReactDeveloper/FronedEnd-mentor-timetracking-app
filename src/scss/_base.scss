@@ -1,0 +1,13 @@
+body{
+    color: var(--clr-pale-blue);
+    background-color: var(--clr-very-dark-blue);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+
+    @media (min-width: 1000px){
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+    }
+}
+

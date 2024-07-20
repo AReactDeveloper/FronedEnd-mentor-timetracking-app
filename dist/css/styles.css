@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  /* Layout */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+  /* Primary */
+  --clr-blue: hsl(246, 80%, 60%);
+  --clr-light-red-work: hsl(15, 100%, 70%);
+  --clr-soft-blue-play: hsl(195, 74%, 62%);
+  --clr-light-red-study: hsl(348, 100%, 68%);
+  --clr-lime-green-exercise: hsl(145, 58%, 55%);
+  --clr-violet-social: hsl(264, 64%, 52%);
+  --clr-soft-orange-selfCare: hsl(43, 84%, 65%);
+  /* Neutral */
+  --clr-very-dark-blue: hsl(226, 43%, 10%);
+  --clr-dark-blue: hsl(235, 46%, 20%);
+  --clr-desaturated-blue: hsl(235, 45%, 61%);
+  --clr-pale-blue: hsl(236, 100%, 87%);
+  /* Typography */
+  --fs-body: 18px; /* (card titles e.g. Work, Play) */
+  --ff-primary: "Rubik", sans-serif; /* Primary font family */
+  --fw-light: 300; /* Light font weight */
+  --fw-regular: 400; /* Regular font weight */
+  --fw-medium: 500; /* Medium font weight */
+  /* spacing */
+  --spacing-100: 25px;
+  --spacing-200: 80px;
+  --grid-gap: 30px;
+  --grid-gap-mobile: 23px;
+}
+
+/* Expanded CSS Reset - v3.0 | 2024 | MIT License | https://github.com/ericmeyer/css-reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+header, nav, section, article, aside, footer, main,
+hgroup, details, summary, figure, figcaption, dialog, menu,
+input, textarea, button, select, option, optgroup,
+canvas, svg, embed, iframe, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+button, input, select, textarea {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button:focus, input:focus, select:focus, textarea:focus {
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+table caption {
+  font-weight: bold;
+  padding: 0.5em 0;
+}
+
+code {
+  font-family: monospace, sans-serif;
+  background: #f4f4f4;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+/* Add more specific resets if needed for your project */
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=tel],
+input[type=search],
+input[type=url],
+textarea,
+select {
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  font-weight: bold;
+}
+
+/* Accessibility improvements */
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+  outline: 2px solid #005fcc; /* Highlight focusable elements */
+  outline-offset: 2px;
+}
+
+button, input[type=button], input[type=submit] {
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+body {
+  color: var(--clr-pale-blue);
+  background-color: var(--clr-very-dark-blue);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+}
+@media (min-width: 1000px) {
+  body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  }
+}
+
+.bg-work {
+  background-color: var(--clr-light-red-work) !important;
+  position: relative;
+}
+.bg-work::after {
+  content: url("./../../images/icon-work.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.bg-play {
+  background-color: var(--clr-soft-blue-play) !important;
+  position: relative;
+}
+.bg-play::after {
+  content: url("./../../images/icon-play.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.bg-study {
+  background-color: var(--clr-light-red-study) !important;
+  position: relative;
+}
+.bg-study::after {
+  content: url("./../../images/icon-study.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.bg-exercise {
+  background-color: var(--clr-lime-green-exercise) !important;
+  position: relative;
+}
+.bg-exercise::after {
+  content: url("./../../images/icon-exercise.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.bg-social {
+  background-color: var(--clr-violet-social) !important;
+  position: relative;
+}
+.bg-social::after {
+  content: url("./../../images/icon-social.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.bg-self-care {
+  background-color: var(--clr-soft-orange-selfCare) !important;
+  position: relative;
+}
+.bg-self-care::after {
+  content: url("./../../images/icon-self-care.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.wrapper {
+  margin-block: var(--spacing-200);
+  padding: 0 20px;
+  display: grid;
+  gap: var(--grid-gap-mobile);
+}
+.wrapper__card-head {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-dark-blue);
+  border-radius: 20px;
+  min-height: 140px;
+  z-index: 1;
+}
+.wrapper__card-head__userinfo {
+  z-index: 2;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--clr-blue);
+  border-radius: 20px;
+}
+.wrapper__card-head__userinfo h2 {
+  font-size: 1.3rem;
+  color: white;
+}
+@media (min-width: 1000px) {
+  .wrapper__card-head__userinfo h2 {
+    font-size: 2rem;
+  }
+}
+.wrapper__card-head__userinfo p {
+  font-size: 0.8rem;
+}
+.wrapper__card-head__userinfo img {
+  border-radius: 50%;
+  width: 20%;
+  height: auto;
+  box-shadow: 0 0 0 2pt white;
+}
+@media (min-width: 1000px) {
+  .wrapper__card-head__userinfo img {
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .wrapper__card-head__userinfo {
+    flex: 2;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+  }
+}
+.wrapper__card-head__nav {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 14px;
+}
+@media (min-width: 1000px) {
+  .wrapper__card-head__nav {
+    align-items: start;
+    justify-content: end;
+    gap: 15px;
+    flex-direction: column;
+  }
+}
+.wrapper__cards-container {
+  display: grid;
+  gap: var(--grid-gap-mobile);
+}
+.wrapper__cards-container__card {
+  height: 160px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.wrapper__cards-container__card__inner {
+  padding: 30px 25px;
+  z-index: 2;
+  height: 80%;
+  background-color: var(--clr-dark-blue);
+  border-radius: 30px 30px 20px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+  text-transform: initial;
+  font-weight: var(--fw-medium);
+  color: #fff;
+}
+.wrapper__cards-container__card__inner h2 {
+  font-size: var(--fs-body);
+}
+@media (min-width: 1000px) {
+  .wrapper__cards-container__card__inner h2 {
+    font-size: 1.1rem;
+  }
+}
+.wrapper__cards-container__card__inner a, .wrapper__cards-container__card__inner span {
+  margin-left: auto;
+}
+.wrapper__cards-container__card__inner p {
+  font-size: 2rem;
+  font-weight: 100;
+}
+.wrapper__cards-container__card__inner span {
+  font-size: 0.9rem;
+  font-weight: var(--fw-light);
+  color: var(--clr-pale-blue);
+}
+@media (min-width: 1000px) {
+  .wrapper__cards-container__card__inner span {
+    grid-column: 1;
+  }
+}
+@media (min-width: 1000px) {
+  .wrapper__cards-container__card {
+    height: 200px;
+  }
+}
+@media (min-width: 1000px) {
+  .wrapper__cards-container {
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    gap: var(--grid-gap);
+  }
+}
+@media (min-width: 1000px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    max-width: 1000px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
