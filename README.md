@@ -1,4 +1,5 @@
-!(https://raw.githubusercontent.com/AReactDeveloper/FronedEnd-mentor-timetracking-app/main/design/screenshots/desktop-view.png)
+![](./design/screenshots/desktop-view.png)
+
 
 # Frontend Mentor - Time Tracking App
 
@@ -67,11 +68,12 @@ Here’s a brief overview of the main components and files in the project:
 
 Here are some screenshots of the Time Tracking App:
 
-**Desktop View - Dashboard**
-![Desktop View - Dashboard](https://github.com/AReactDeveloper/FronedEnd-mentor-timetracking-app/blob/main/screenshots/desktop-dashboard.png)
+**Desktop View**
+![Desktop View](./design/screenshots/desktop-view.png)
 
-**Mobile View - Daily View**
-![Mobile View - Daily View](https://github.com/AReactDeveloper/FronedEnd-mentor-timetracking-app/blob/main/screenshots/mobile-daily-view.png)
+**Mobile View**
+![Mobile View](./design/screenshots/mobile-view.png)
+
 
 ## License
 
