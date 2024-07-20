@@ -69,9 +69,11 @@ Here’s a brief overview of the main components and files in the project:
 Here are some screenshots of the Time Tracking App:
 
 **Desktop View**
+
 ![Desktop View](./design/screenshots/desktop-view.png)
 
 **Mobile View**
+
 ![Mobile View](./design/screenshots/mobile-view.png)
 
 
