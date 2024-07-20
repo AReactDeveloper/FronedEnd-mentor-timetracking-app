@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () =>{
 
-    const apiLink = 'http://192.168.1.33:5500/data.json'
+    const apiLink = 'https://areactdeveloper.github.io/FronedEnd-mentor-timetracking-app/data.json'
     const buttons = document.querySelectorAll('.nav-btn')
     var currentTimeFrame = 'daily'
 
