@@ -1,4 +1,4 @@
-(https://raw.githubusercontent.com/AReactDeveloper/FronedEnd-mentor-timetracking-app/main/design/screenshots/desktop-view.png)
+!(https://raw.githubusercontent.com/AReactDeveloper/FronedEnd-mentor-timetracking-app/main/design/screenshots/desktop-view.png)
 
 # Frontend Mentor - Time Tracking App
 
